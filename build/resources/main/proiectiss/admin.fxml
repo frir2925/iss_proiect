@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: mediumpurple; -fx-border-color: slateblue; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectiss.AdminController">
+   <children>
+      <Label layoutX="351.0" layoutY="108.0" prefHeight="43.0" prefWidth="129.0" text="Admin Panel" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font></Label>
+      <TableView fx:id="tableEvent" layoutX="114.0" layoutY="184.0" prefHeight="63.0" prefWidth="604.0">
+        <columns>
+          <TableColumn fx:id="columnNume" prefWidth="221.99999237060547" text="Nume" />
+          <TableColumn fx:id="columnDescriere" prefWidth="260.6667175292969" text="Descriere" />
+            <TableColumn fx:id="columnLocuri" prefWidth="111.3333740234375" text="Locuri" />
+        </columns>
+      </TableView>
+      <Button layoutX="379.0" layoutY="401.0" mnemonicParsing="false" onAction="#clearEvent" text="Clear event" />
+      <TextField fx:id="textFieldNume" layoutX="201.0" layoutY="284.0" />
+      <TextField fx:id="textFieldDescriere" layoutX="201.0" layoutY="342.0" />
+      <TextField fx:id="textFieldLocuri" layoutX="201.0" layoutY="402.0" />
+      <Button layoutX="382.0" layoutY="282.0" mnemonicParsing="false" onAction="#addEvent" text="Add event" />
+      <Button layoutX="382.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateEvent" text="Update Event" />
+      <ImageView fitHeight="136.0" fitWidth="149.0" layoutX="39.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logonational.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="128.0" layoutY="285.0" prefHeight="25.0" prefWidth="59.0" text="Nume:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="343.0" prefHeight="25.0" prefWidth="59.0" text="Descriere:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="402.0" prefHeight="25.0" prefWidth="59.0" text="Locuri:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="734.0" layoutY="461.0" mnemonicParsing="false" onAction="#closeButtonAction" text="Close" />
+      <Button layoutX="13.0" layoutY="461.0" mnemonicParsing="false" onAction="#clearRezervari" text="Clear rezervari" />
+      <TextField fx:id="textFieldUsernameAdmin" layoutX="569.0" layoutY="297.0" />
+      <TextField fx:id="textFieldPasswordAdmin" layoutX="569.0" layoutY="355.0" />
+      <Button layoutX="597.0" layoutY="401.0" mnemonicParsing="false" onAction="#adaugaAdmin" text="Adauga admin" />
+      <Label layoutX="614.0" layoutY="276.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="614.0" layoutY="335.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
