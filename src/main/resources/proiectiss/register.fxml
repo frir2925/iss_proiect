@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="800.0"
+            style="-fx-background-color: mediumpurple; -fx-border-color: slateblue; -fx-border-width: 10;"
+            xmlns="http://javafx.com/javafx/17" fx:controller="com.example.proiectiss.RegisterController">
+   <children>
+      <TextField fx:id="textFieldUsername" layoutX="358.0" layoutY="183.0"/>
+      <Button layoutX="403.0" layoutY="309.0" mnemonicParsing="false" onAction="#register" text="Register"/>
+      <PasswordField fx:id="textFieldPassword" layoutX="358.0" layoutY="225.0"/>
+      <Label layoutX="245.0" layoutY="187.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0"/>
+         </font>
+      </Label>
+      <PasswordField fx:id="textFieldPassword2" layoutX="358.0" layoutY="265.0"/>
+      <Label layoutX="245.0" layoutY="229.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0"/>
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="269.0" text="Retype password:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0"/>
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="717.0" layoutY="454.0" mnemonicParsing="false" onAction="#closeButtonAction"
+              text="Close"/>
+   </children>
+</AnchorPane>

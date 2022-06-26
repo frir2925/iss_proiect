@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: mediumpurple; -fx-border-color: slateblue; -fx-border-width: 10;"
+            xmlns="http://javafx.com/javafx/17" fx:controller="com.example.proiectiss.CardController">
+   <children>
+      <TextField fx:id="textFieldNume" layoutX="130.0" layoutY="142.0"/>
+      <TextField fx:id="textFieldPrenume" layoutX="300.0" layoutY="142.0"/>
+      <TextField fx:id="textFieldCard" layoutX="130.0" layoutY="200.0" prefHeight="25.0" prefWidth="321.0"/>
+      <DatePicker fx:id="datePicker" layoutX="216.0" layoutY="255.0" prefHeight="25.0" prefWidth="107.0"/>
+      <TextField fx:id="textFieldCVV" layoutX="375.0" layoutY="255.0" prefHeight="25.0" prefWidth="78.0"/>
+      <Button layoutX="274.0" layoutY="316.0" mnemonicParsing="false" onAction="#cumparare" text="Cumparare"/>
+      <Button fx:id="closeButton" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#closeButtonAction"
+              text="Close"/>
+      <Label layoutX="223.0" layoutY="75.0" text="Credit Card Pay" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="24.0"/>
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="116.0" text="Nume:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0"/>
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="116.0" text="Prenume:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0"/>
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="175.0" text="Card number:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0"/>
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="260.0" text="Data expirare:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0"/>
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="260.0" text="CVV:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0"/>
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
